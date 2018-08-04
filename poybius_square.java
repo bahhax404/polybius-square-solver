@@ -42,17 +42,12 @@ public class Main {
                               };
         List<String> decryptedMessage = new ArrayList<>();
         int x , y ;
-
+        int j = 0 ;
         for (int i = 0; i < encryptedText.length; i++){
-
-            for (int j = 0; j < 2; j++){
 
                 x = encryptedText[i][j];
                 y = encryptedText[i][j+1];
                 decryptedMessage.add(square[y-1][x-1]);
-                break;
-            }
-
 
         }
         return decryptedMessage;
